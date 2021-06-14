@@ -14,7 +14,36 @@ function cb(error,response,html){
 function eval(html){
     let ch = cheerio.load(html);
 
-    let winningTeam = ch(".match-header .status-text span").text();
+    let allBowlersTrs = ch(".table.bowler tbody tr");
+    // console.log(allBowlerstrs);
 
-    console.log(winningTeam);
+
+    let highestWicketTakerName;
+    let highestWicket;
+    let lowestEconomy;
+
+    for(let i = 0;i < allBowlersTrs.length;i++){
+        let onePlayerDetails = allBowlersTrs[i];
+
+        let allTds = ch(onePlayerDetails).find("td");
+
+        let bowlerName = ch(allTds[0]).text();
+
+        let wickets = ch(allTds[4]).text();
+
+        let economy = ch(allTds[5]).text();
+
+
+        if(i == 0){
+            highestWicketTakerName = bowlerName;
+            highestWicket = wickets;
+            lowestEconomy = economy;
+        }else if(wickets > highestWicket || (wickets == highestWicket && economy < lowestEconomy)){
+            highestWicketTakerName = bowlerName;
+            highestWicket = wickets;
+            lowestEconomy = economy;
+        }
+    }
+
+    console.log(`Highest Wicket taker is ${highestWicketTakerName} with ${highestWicket} wickets, and economy of ${lowestEconomy}`);
 }
