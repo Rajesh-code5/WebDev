@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: royalblue;
+}
+
+input[type="text"] {
+    width: 600px;
+    height: 40px;
+    font-size: 20px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+}
+
+
+li {
+    color: white;
+    list-style: none;
+    font-size: 30px;
+  }
