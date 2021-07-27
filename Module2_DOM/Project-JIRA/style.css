@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -18,6 +20,9 @@ nav{
 
 .grid{
     height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .filters,.action-buttons{
@@ -40,7 +45,6 @@ nav{
 }
 
 .filter{
-    /* border: 1px solid rgba(255, 255, 255, 0.95); */
     width: calc( ( 25 / 100 ) * 16rem );
     display: flex;
     justify-content: center;
@@ -52,7 +56,6 @@ nav{
 }
 
 .add,.delete{
-    /* border: 1px solid rgba(255, 255, 255, 0.95); */
     width: calc( ( 50 / 100 ) * 8rem );
     display: flex;
     justify-content: center;
@@ -98,9 +101,101 @@ nav{
 .modal{
     height: 20rem;
     width: 35rem;
-    background-color: red;
     position: fixed;
     top: 20vh;
     left: 50%;
     transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-section{
+    height: 100%;
+    width: 70%;
+    background-color: #dcdde1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-area{
+    height: 85%;
+    width: 85%;
+    background-color: white;
+    outline: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+}
+
+.priority-section{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #636e72;
+}
+
+.priority-content{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.priority-inner-content{
+    height: 22%;
+    width: 65%;
+}
+
+.priority-inner-content:hover{
+    width: 50%;
+    height: 18%;
+}
+
+.selected-pink,.selected-black{
+    border: 5px solid #079992;
+}
+
+.selected-blue{
+    border: 5px solid #2C3A47;
+}
+
+.selected-green{
+    border: 5px solid #0e5c94c7;
+}
+
+.ticket{
+    margin: 10px;
+    height: 12rem;
+    width: 20rem;
+    border: 1px solid;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.ticket-color{
+    height: 10%;
+    width: 100%;
+}
+
+.ticket-id{
+    height: 15%;
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.ticket-task{
+    height: 75%;
+    width: 100%;
+    padding: 8px;
+    font-weight: normal;
+    overflow: auto;
+    background-color: #ecececd2;
 }
