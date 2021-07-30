@@ -64,7 +64,7 @@ nav{
     font-size: 30px;
 }
 
-.delete:hover{
+.delete:hover,.delete-select{
     background-color: #555555;
 }
 
@@ -91,7 +91,7 @@ nav{
 }
 
 .black{
-    background-color: black;
+    background-color: #161616;
 }
 
 .material-icons{
@@ -173,10 +173,10 @@ nav{
 
 .ticket{
     margin: 10px;
-    height: 12rem;
+    height: 13rem;
     width: 20rem;
-    border: 1px solid;
-    /* font-family: 'Roboto', sans-serif; */
+    border: 2px solid;
+    font-family: 'Roboto', sans-serif;
 }
 
 .ticket-color{
@@ -189,13 +189,17 @@ nav{
     width: 100%;
     padding: 8px;
     font-weight: bold;
+    background-color: #a6adaf;
 }
 
 .ticket-task{
-    height: 75%;
+    height: 75.1%;
     width: 100%;
     padding: 8px;
     font-weight: normal;
+    color: #f7f7f7;
     overflow: auto;
-    background-color: #ecececd2;
+    background-color: #218c74;
+    text-align: center;
+    outline: none;
 }
