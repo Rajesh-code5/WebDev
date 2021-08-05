@@ -51,7 +51,7 @@ nav{
     align-items: center;
 }
 
-.filter:hover{
+.filter:hover,.filter-select{
     background-color: #555555;
 }
 
