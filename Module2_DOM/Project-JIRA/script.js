@@ -20,6 +20,10 @@ for(let i = 0;i < filterColorBtn.length;i++){
             loadTasks();
             filterDiv[i].classList.remove("filter-select");
         }else{
+            for(let j = 0;j < filterColorBtn.length;j++){
+                filterFlag[j] = false;
+                filterDiv[j].classList.remove("filter-select");
+            }
             filterFlag[i] = true;
             let filterColor = filterColorBtn[i].classList[1];
             loadTasks(filterColor);

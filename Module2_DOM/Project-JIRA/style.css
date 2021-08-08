@@ -60,7 +60,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
 
@@ -91,7 +91,7 @@ nav{
 }
 
 .black{
-    background-color: #161616;
+    background-color: #1f1e1e;
 }
 
 .material-icons{

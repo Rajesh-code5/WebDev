@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Mukta:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+}
+
+.title-bar{
+    height: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: rgb(60, 133, 60);
+}
+
+.menu-bar{
+    height: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar div{
+    margin-left: 20px;
+
+}
+
+.menu-options-bar{
+    height: 8%;
+    background-color: rgb(60, 133, 60);
+}
+
+.formula-section{
+    height: 4%;
+    display: flex;
+}
+
+.selected-cell{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 219, 219);
+    border: none;
+    border-right: 2px solid;
+}
+
+.formula-section .formula-input{
+    display: block;
+    height: 100%;
+    width: 85%;
+    display: flex;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.grid{
+    height: 76%;
+    overflow: auto;
+}
+
+.sheets-section{
+    height: 4%;
+    background-color: rgb(60, 133, 60);
+}
+
+.blank{
+    height: 30px;
+    width: 30px;
+    background-color: cadetblue;
+    position: fixed;
+    top: 20vh;
+    z-index: 1;
+}
+
+.row-number-section{
+    display: inline-block;
+}
+
+.row-number{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(60, 133, 60);
+    color: white;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-tag-section{
+    position: fixed;
+    top: 20vh;
+    left: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.column-tag{
+    flex-shrink: 0%;
+    width: 100px;
+    border: none;
+    border-right: 1px solid;
+    background-color: rgb(60, 133, 60);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
