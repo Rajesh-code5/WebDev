@@ -1,0 +1,53 @@
+
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 12rem;
+    width: 42rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -4.5rem;
+}
+
+.circle{
+    height: 10rem;
+    width: 10rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(168, 45, 24);
+}
+
+.circle1{
+    left: 9rem;
+   
+}
+
+.circle2{
+    left: 6rem;
+}
+
+.circle3{
+    left: 3rem;
+}
+
+.circle4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; 
+    color: white;
+}
+
+.circle1,.circle2,.circle3{
+    background-image: url(https://images.pexels.com/photos/4068300/pexels-photo-4068300.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: contain;
+}
