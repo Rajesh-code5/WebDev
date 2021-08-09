@@ -66,7 +66,8 @@ body{
 
 .grid{
     height: 76%;
-    overflow: auto;
+    /* overflow: auto; */
+    position: relative;
 }
 
 .sheets-section{
@@ -85,6 +86,9 @@ body{
 
 .row-number-section{
     display: inline-block;
+    position: fixed;
+    top: calc( 20vh + 30px);
+    left: 0;
 }
 
 .row-number{
@@ -116,4 +120,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cell-section{
+    height: calc( 76vh - 30px );
+    width: calc( 100vw - 30px );
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    overflow: auto;
+}
+
+.cell{
+    height: 30px;
+    width: 100px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
 }

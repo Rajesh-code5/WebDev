@@ -16,3 +16,23 @@ for(let i = 65;i <= 90;i++){  //A to Z
     div.classList.add("column-tag");
     columnSection.append(div);
 }
+
+let cellSection = document.querySelector(".cell-section");
+
+for(let i = 1;i <= 100;i++){
+    let rowDiv = document.createElement("div");
+    rowDiv.classList.add("row");
+
+    for(let j = 65;j <= 90;j++){
+        let cellAddress = String.fromCharCode(j) + i;
+
+        let cellDiv = document.createElement("div");
+
+        cellDiv.setAttribute("cell-address",cellAddress);
+        cellDiv.classList.add("cell")
+
+        rowDiv.append(cellDiv);
+    }
+
+    cellSection.append(rowDiv);
+}
