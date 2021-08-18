@@ -31,11 +31,31 @@ body{
 
 .menu-bar div{
     margin-left: 20px;
+    position: relative;
 }
 
 .menu-options-bar{
     height: 8%;
     background-color: rgb(65, 134, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-design, .text-align , .colorDiv{
+    height: 100%;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-style{
+    width : 31%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .formula-section{
@@ -141,4 +161,20 @@ body{
 
 .selected-cell{
     border: 2px solid rgb(92, 183, 211);
+}
+
+.bold,.italic,.underline,.left,.right,.center,.bgColor,.color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-dropdown{
+    position: absolute!important;
+    left: -20px;
+    top: 20px;
+    background-color: white;
+    width: 4rem;
+    text-align: center;
+    z-index: 1;
 }
